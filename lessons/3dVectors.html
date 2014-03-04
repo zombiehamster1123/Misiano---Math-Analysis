@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head id="head">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D Vectors</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+<style>
+@media screen
+and (max-device-width : 481px)
+{
+	#pictureOne{display:none;}
+	#tableOne{width:20%;}
+	#pictureTwo{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">		
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<!--<iframe class="video" src="https://www.youtube.com/embed/gnO3pNgFkyo?rel=0" frameborder="0" allowfullscreen></iframe><br>
+			<br>-->
+            <h1>Vectors in 3D Space</h1>
+            <a href="../videos/video3dVectors.html" data-ajax="false" data-role="button" class="ui-btn-right" data-theme="b">Video</a><br>
+			<br>
+            <table class="zoomTarget" data-closeclick="true" style="width:500px;">
+              <tr>
+                <td class="content-box-blue">Written as an ordered triple, ${AB}&#8598;{&rarr;}$ is <b>$(x_2-x_1, y_2-y_1, z_2-z_1)$</b><br><br>
+			The magnitude of ${AB}&#8598;{&rarr;}$ is <b>$|{AB}&#8598;{&rarr;}|={x^2+y^2+z^2}$</b><br></td>
+                <td><img src="images/3DVectorGraph.gif" alt="3d Vector" id="pictureOne" /></td>
+              </tr>
+            </table>
+            <br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			Given $a&#8598;{&rarr;}=(x_1,y_1,z_1)$, $b&#8598;{&rarr;}=(x_2,y_2,z_2)$ & <i>k</i> is any real #...
+			<table class="gridtable" id="tableOne">
+              <tr>
+                <th colspan="2">Vector Operations in 3D Space</th>
+              </tr>
+              <tr>
+                <th>Addition</th>
+                <td>$a&#8598;{&rarr;}+b&#8598;{&rarr;}=(x_1+x_2, y_1+y_2, z_1+z_2)$</td>
+              </tr>
+              <tr>
+                <th>Subtraction</th>
+                <td>$a&#8598;{&rarr;}-b&#8598;{&rarr;}=(x_1-x_2, y_1-y_2, z_1-z_2)$</td>
+              </tr>
+              <tr>
+                <th>Scalar Multiplication</th>
+                <td>${ka}&#8598;{&rarr;}=(kx_1,ky_1,kz_1)$</td>
+              </tr>
+            </table>
+			<br>
+			</div>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			Given $a&#8598;{&rarr;}=(7,5,6)$, $b&#8598;{&rarr;}=(4,1,3)$ & $k=3$
+			<table class="gridtable">
+			  <tr>
+			    <th colspan="2">Vector Operations in 3D Space</th>
+			  </tr>
+              <tr>
+			    <th>Addition</th>
+				<td>$a&#8598;{&rarr;}+b&#8598;{&rarr;}=(7+4, 5+1, 6+3)=(11,6,9)$</td>
+              </tr>
+			  <tr>
+			    <th>Subtraction</th>
+				<td>$a&#8598;{&rarr;}-b&#8598;{&rarr;}=(7-4, 5-1, 6-3)=(3,4,3)$</td>
+			  </tr>
+			  <tr>
+			    <th>Scalar Multiplication</th>
+				<td>${3a}&#8598;{&rarr;}=(3&bull;7,3&bull;5,3&bull;6)=(21,15,18)$</td>
+			  </tr>
+              </table>
+			  </div><br>
+              <table class="zoomTarget" data-closeclick="true">
+              <tr>
+                <td><b>Unit Vector</b> - vector with a magnitude (length) of 1 unit<br>
+			  $i&#8598;{&rarr;}=(1,0,0)$<br>
+			  $j&#8598;{&rarr;}=(0,1,0)$<br>
+			  $k&#8598;{&rarr;}=(0,0,1)$<br></td>
+                <td><img src="images/3DUnitVectorGraph.gif" alt="unit vector" width="281" height="249" id="3DUnitVector" /></td>
+              </tr>
+            </table>
+			  <br>
+			  <div class="zoomTarget" data-closeclick="true" style="width:500px;">
+              <b class="underline">Writing vectors as the sum of unit vectors</b>
+              <table>
+              <tr>
+                <td><img src="images/3DSumofUnitVectors.gif" alt="sum of vectors" width="254" height="250" id="pictureTwo" /></td>
+                <td>Point <b>$(4,9,8)$</b> becomes <b>$4i&#8598;{&rarr;}+9j&#8598;{&rarr;}+8k&#8598;{&rarr;}$</b></td>
+              </tr>
+            </table>
+            </div><br>
+			</div>
+		</article>
+	</div>
+</div>
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Symmetry</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<h1>Symmetry</h1>
+			<b>Point Symmetry</b><br>
+			2 points are symmetric <i>wrt</i> (with respect to) another point when that other point is the midpoint<br>
+			<img src="images/point_symmetry.svg" alt="symmetry"><br>
+			A common point of symmetry... origin (0,0)<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			Point Symmetry wrt the Origin<br>
+			when $(x,y)$ & $(-x,-y)$ &isin; the same function or graph<br>
+			Ex) Find the coordinates of $P^1$ if $P(-3,2) \text" & " P^1$ are symmetric wrt point $M(1,1)$<br>
+			$midpoint_{PP^1}=({x_1+x_2}/2,{y_1+y_2}/2)$<br>
+			$(1,1)=({-3+x_2}/2,{2+y_x}/2)$<br>
+			$\table 1={-3+x_2}/2, \text",", 1={2+y_2}/2;
+			2=-3+x_2, \text",",  2=2+y_2;
+			5=x_2, \text",",  0=y_x;$<br>
+			$&there4;\text" " P^1(5,0)$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:700px;">
+			<b>Line Symmetry</b><br>
+			2 points, $P\text" & " P^1$ are symmetric <i>wrt</i> a line when that line is the perpendicular bisector of $PP^1$<br>
+			<br>
+			<table width="200" class="gridtable">
+              <tr>
+                <th scope="col">Symmetry wrt</th>
+                <td><b>x axis</b></td>
+				<td><b>y axis</b></td>
+				<td><b>$y=x$<b></td>
+				<td><b>$y=-x$</b></td>
+              </tr>
+			  <tr>
+				<th scope="col">Definition</th>
+                <td>$(x,y)\text" & "(x,-y)$ &isin; the same graph</td>
+                <td>$(x,y)\text" & "(-x,y)$ &isin; the same graph</td>
+				<td>$(x,y)\text" & "(y,x)$  &isin; the same graph</td>
+				<td>$(x,y)\text" & "(-y,-x) $&isin; the same graph</td>
+              </tr>
+			  <tr>
+				<th scope="col">Sample Graph</th>
+                <td><img src="images/symmetryxAxis.gif" width="140" height="140" alt="x-axis" /></td>
+                <td><img src="images/symmetryyAxis.gif" width="140" height="140" alt="y-axis" /></td>
+				<td><img src="images/symmetryy=xGraph.gif" width="140" height="140" alt="y=x" /></td>
+				<td><img src="images/symmetryy=-xGraph.gif" width="140" height="140" alt="y=-x" /></td>
+              </tr>
+			</table>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			ex) Determine whether the graph of $y=6x^4-3x^2+1$ is symmetric wrt...
+			<table width="200" class="gridtable">
+              <tr>
+				  <th scope="col">Origin</th>
+				  <td>$(-x,-y)$</td>
+				  <td>$\table -y=6(-x)^4-3(-x)^2+1; -y=6x^4-3x^2+1$</td>
+				  <td>No</td>
+			  </tr>
+			  <tr>
+				  <th scope="col">x axis</th>
+				  <td>$(x,-y)$</td>
+				  <td>$-y=6x^4-3x^2+1$</td>
+				  <td>No</td>
+			  </tr>
+			  <tr>
+				  <th scope="col">y axis</th>
+				  <td>$(-x,y)$</td>
+				  <td>$y=6(-4)^4-3(-x)^2+1$</td>
+				  <td>Yes</td>
+			  </tr>
+			  <tr>
+				  <th scope="col">$y=x$</th>
+				  <td>$(y,x)$</td>
+				  <td>$x=6y^4-3y^2+1$</td>
+				  <td>No</td>
+			  </tr>
+			  <tr>
+				  <th scope="col">$y=-x$</th>
+				  <td>$(-y,-x)$</td>
+				  <td>$\table -x=6(-y)^4-3(-y)^2+1; x=-6y^4+3y^2-1$</td>
+				  <td>No</td>
+			  </tr>
+			</table>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            <b>Even & Odd Functions</b><br>
+            <table width="300" class="gridtable">
+              <tr>
+                <th scope="col">Even Function</th>
+                <th scope="col">Odd Funciton</th>
+              </tr>
+              <tr>
+                <td style="text-align:center"><b>ALL</b> even variable exponents</td>
+                <td style="text-align:center"><b>ALL</b> odd variable exponents</td>
+              </tr>
+            </table>
+			<br>
+			ex) Determine wheter each funciton is an even function, odd function or neither<br>
+			$\table y=x^5-4x, \text"odd"; y=x^2-64, \text"even"; y=5x^3+6x-9, \text"neither"$<br>
+			</div><br>
+			<a href="../homework/hwSymmetry.html" data-ajax="false" data-role="button" data-theme="b" class="ui-btn-left">Homework</a>
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			</div>
+		</article>
+	</div>
+    
+    
+</div>
+
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

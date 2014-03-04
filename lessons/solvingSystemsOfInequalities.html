@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solving Systems of Inequalities</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<h1>Solving Systems Of Inequalities</h1>
+			Solve the following system...<br>
+			$\table 2x-3y &le;12; x+5y&le;20; x>0$<br>
+			<br>
+			$1^{st}$, solve for $y$, if possible<br>
+			$y&ge;(2/3)x-4$<br>
+			$y&le;(-1/5)x+4$<br>
+			$x>0$ <- $x>0$ is a common "<i>real life</i>" constraint used for time, distance, # of units sold<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            <img src="images/inequalitiesGraph1.gif" width="224" height="183" alt="inequality" />
+			<ul>
+		 	 <li>This is a "closed" or "bounded" solution</li>
+			<li>The solution region is a bounded polygonal convex set (a triangle, in this case)</li>
+            </ul>
+			A polygonal convex set is a function of two variables (denoted $f(x,y)$) & represents all $(x,y)$ points within the set<br>
+            <br>
+			To find the min & max values of the convex set $f(x,y)$, evaluate the vertices of its boundary<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>Vertex Theorem</b><br>
+			the min or max value of $f(x,y)=ax+by+c$ on a polygonal convex set occurs at a vertex<br>
+			<br>
+			Ex) find the max & min values of $f(x,y)=x+2y+1$ for the polygonal convex set with the following constraints...<br>
+			$\table x&ge;0, \text",", y&ge;0, \text",", 2x+y&le;4, \text",", x+y&le;3 $<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			$1^{st}$, graph to determine coordinates of vertices<br>
+			$\table (0,0), \text",", (2,0), \text",", (1,2), \text",", (0,3)$<br>
+			<br>
+			$2^{nd}$, evaluate at each vertex...<br>
+			$\table f(0,0)=1, \text",", f(2,0)=3, \text",", f(1,2)=6, \text",", f(0,3)=7; min=1,,,,,,max=7$<br>
+            </div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<table class="gridtable" width="200">
+              <tr>
+                <th scope="col">Open (unbounded) solutions go on forver in some direction</th>
+                <th scope="col">No solution... no common points</th>
+              </tr>
+              <tr>
+                <td><img src="images/unboundedGraph.gif" width="139" height="177" alt="unbounded" /></td>
+                <td><img src="images/inequalitiesNoSolutionGraph.gif" width="166" height="155" alt="no solution" /></td>
+              </tr>
+            </table>
+			</div><br>
+			<a href="../homework/hwSolvingSystemsOfInequalities.html" data-ajax="false" data-role="button" data-theme="b" class="ui-btn-left">Homework</a>
+			<a href="../videos/videoSolvingSystemsOfInequalities.html" data-ajax="false" data-role="button" class="ui-btn-right" data-theme="b">Video</a><br>
+			<br>
+			</div>
+		</article>
+	</div>
+</div>
+
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+@media screen and (max-device-width : 321px) {#changeTable1{display:none;}}
+@media screen and (min-device-width : 322px) and (max-device-width : 480px) {#changeTable1{display:none;}}
+@media screen and (min-device-width : 481px) { #changeTable2{display:none;}}

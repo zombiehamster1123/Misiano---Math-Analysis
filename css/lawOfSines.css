@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@media screen
+and (max-device-width : 479px)
+{
+	#exampleOneTable{ display:none; }
+	#exampleTwoTable{ display:none; }
+	#sinTrianglesOneTable{display:none;}
+}
+
+@media screen
+and (min-device-width : 480px)
+and (max-device-width : 767px)
+{
+	#exampleOneTable{display:none;}
+	#exampleThreeTable{display:none;}
+	#sinTrianglesTwoTable{display:none;}
+}
+
+@media screen
+and (min-device-width : 768px)
+{
+	#exampleTwoTable{ display:none; }
+	#exampleThreeTable{display:none;}
+	#sinTrianglesTwoTable{display:none;}
+}

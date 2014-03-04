@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vecotr Parametric Equations</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<h1>Vectors & Parametric Equations</h1>
+			<b class="underline">Direction Vector</b> - a vector used to describe the slope of a line<br>
+			<b class="underline">Parameter</b> - the independent variable t (time)<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			Vector Equation of a Line<br>
+			a line through $P_1(x_1,y_1)$ & parallel to vector $a&#8598;{&rarr;}=(a_1,a_2)$ is represented by...<br>
+			$(x-x_1,y-y_1)=t(a_1,a_2)$ (t = time)<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			ex) Write a vector equation of a line through $P(1,5)$ a parallel to vector $a&#8598;{&rarr;}=(-7,2)$<br>
+			$\table (x-1,y-5)=t(-7,2); (x-1, y-5)=(-7t, 2t); x-1=-7t, y-5=2t; x=1-7t, y=5+2t$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			a line through $P_1$(x_1, y_1) & parallel to vector $a&#8598;{&rarr;}=(a_1,a_2)$ is represented by...<br>
+			$\table x=x_1+ta_1; y=y_1+ta_2$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			ex) Write the parametric equations for the line through $P(1,5)$ & parallel to $a&#8598;{&rarr;}=(-7,2)$<br>
+			<br>
+			$\table x=1-7t; x-1=-7t; {x-1}/{-7}=t$
+			$\table y=5+2t; y-5=2t; {y-5}/2=t$
+			$\table {x-1}/{-7}={y-5}/2; -7(y-5)=2(x-1); -7y+35=2x-2; -7y=2x-37; \text"Slope-Intercept Form: " y=-2/7x+{37}/7$<br>
+			<br>
+			$\table \text"Slope-Intercept Form: ",y=1/2x+7; , x=t; \text"Parametric Equations: ", y=1/2t+7$<br>
+			</div><br><br><br>
+			</div>
+		</article>
+	</div>
+</div>
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

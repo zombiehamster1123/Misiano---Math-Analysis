@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Special Sequences</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<h1>Special Sequences</h1>
+			<b>The Number 'b'</b><br>
+			$e=\lim&#8601;{k&rarr;&infin;}(1+1/k)^1+1/{1!}+1/{2!}+1/{3!}+1/{4!}+...$<br>
+			Exponential Series: $\e^x=1+x/{1!}+{x^2}/{2!}+{x^3}/{3!}+{x^4}/{4!}+...$<br>
+			<br>
+			ex) Use the $1^{st}$ five terms of the exponential series to approximate $e^{1.5}$ to the nearest hundredth<br>
+			$\table \e^{1.5}=1+{1.5}/{1!}+{1.5^2}/{2!}+{1.5^3}/{3!}+{1.5^4}/{4!}; \e^{1.5}=1+1.5+1.125+0.5625+0.2109375&asymp;4.40$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>Trigonometric Series</b><br>
+			$\table \cosx=1-{x^2}/{2!}+{x^4}/{4!}-{x^6}/{6!}+{x^8}/{8!}-...; \sinx=x-{x^3}/{3!}+{x^5}/{5!}-{x^7}/{7!}+{x^9}/{9!}-...$<br>
+			<br>
+			ex) Use the first four terms of the trigonometric series to find the value of $\cos&pi;/3$<br>
+			$\table \cos&pi;/3=1-{(&pi;/3)^2}/{2!}+{(&pi;/3)^4}/{4!}-{(&pi;/3)^6}/{6!};=1-0.5483+0.0501-0.0018; &asymp;0.5016$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>Euler's Formula</b><br>
+			$e^{i&theta;}=\cos&theta;+i\sin&theta;$<br>
+			Used to write the exponential form of a complex #<br>
+			&theta; - &ang; in radians<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			ex) Write $-1+\i&radic;{3}$ in exponential form<br>
+			$\table r=&radic;{x^2+y^2}; r=&radic;{(-1)^2+(&radic;3)^2}; r=&radic;4=2$
+			$\table &theta;=\tan^{-1}(y/x)+&pi;; &theta;=\tan^{-1}(&radic;{3}/{-1})+&pi;; &theta;&asymp;{2&pi;}/3$<br>
+			$\table x+yi,=, r(\cos&theta;+i\sin&theta;); -1+i&radic;{3},=,2(\cos{2&pi;}/3+i\sin{2&pi;}/3); ,=, 2\e^{\i{2&pi;}/3}$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>Special Case of Euler's Formula</b><br>
+			$\table \e^{i&pi;}=-1; \ln\e^{i&pi;}=\ln(-1); i&pi;=\ln(-1)$<br>
+			<br>
+			ex) Evaluate $\ln(-6.2)$<br>
+			$\table \ln(-6.2)=\ln(-1)+\ln6.2$<br>
+			</div><br>
+			</div>
+		</article>
+	</div>
+</div>
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Determinants</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<h1>Determinants</h1>
+            <a href="../homework/hwDeterminants.html" data-ajax="false" data-role="button" data-theme="b" class="ui-btn-left">Homework</a>
+			<a href="../videos/videoDeterminants.html" data-ajax="false" data-role="button" class="ui-btn-right" data-theme="b">Video</a><br>
+			<br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>$2^{nd}$ Order Determinant $(\table 2, x, 2)$</b><br>
+			each square matrix has a dterminant<br>
+			The determinant of $[\table a, b; c, d]$ is $|\table a, b; c, d|$</div><br>
+			<div id="content-box-blue" class="zoomTarget" data-closeclick="true" style="width:500px;">...& the value of $|\table a, b; c, d| = ad-bc$</div>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			Ex) Find the value of $|\table 5, -2; 7, 3|$<br>
+			$\table ,ab-ad; =,(5)(3)-(-2)(7);=, 15+14; =, 29$<br>
+			</div><br>
+			<div id="content-box-green" class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>Singular vs Nonsingular Matrix</b><br>
+			<b>Singular:</b> determinant = 0<br>
+			<b>Nonsingular:</b> determinant &ne; 0<br></div>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			The last example problem was nonsingular<br>
+			<br>
+			<b>$3^{rd}$ Order Determinant $(\table 3, x, 3)$</b><br>
+			$|\table a, b, c; d, e, f; g, h, i|=a|\table e, f; h, i|-b|\table d, f; g, i|+c|\table d, e; g, h|$<br>
+            <b>Switch Signs:</b> +,-,+,-,+,...<br>
+            <b>Cofactors (minors):</b> found by deleting the element's row & column<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			Ex) Find the value of...<br>
+			$|\table 2, 1, -3; 0, 8, 7; 4, 6, 5|=2|\table 8, 7; 6, 5|-1|\table 0, 7; 4, 5|+(-3)|\table 0, 8; 4, 6|$<br>
+			$\table 2(8&#x2219;5-7&#x2219;6)-1(0&#x2219;5-7&#x2219;4)-3(0&#x2219;6-8&#x2219;4); 2(40-42)-1(0-28)-3(0-32); 2(-2)-1(-28)-3(-32); -4+28+96; 120$<br>
+			<br>
+			</div>
+			<div id="content-box-blue" class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>Identity Matrix for Multiplication</b><br>
+			only for square matrices$(I_n)$, where $n=\text"order"$<br>
+			what you multiply a matrix by to get that matrix back</div>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			$2^{nd}$ order: $\table I_2, =, [\table 1, 0; 0, 1]$<br>
+			$3^{rd}$ order: $\table I_3, =, [\table 1, 0 ,0; 0, 1, 0; 0, 0, 1]$<br>
+			$4^{th}$ order: $\table I_4, =, [\table 1,0,0,0;0,1,0,0;0,0,1,0;0,0,0,1]$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			Given $A=[\table 3, 4; 1, 2]$, multipy AI<br>
+			$\table AI, =, [\table 3, 4; 1, 2][\table 1, 0; 0, 1]; , =, [\table 3&#x2219;1+4&#x2219;0, 3&#x2219;0+4&#x2219;1; 1&#x2219;1+2&#x2219;0, 1&#x2219;0+2&#x2219;1]; , = ,[\table 3, 4; 1, 2]$<br>
+			</div><br>
+			</div>
+		</article>
+	</div>
+</div>
+
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

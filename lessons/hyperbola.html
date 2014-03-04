@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hyperbola</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<h1>The Hyperbola</h1>
+            <a href="../videos/videoHyperbola.html" data-ajax="false" data-role="button" class="ui-btn-right" data-theme="b">Video</a><br>
+			<br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            <img src="images/hyperbola.gif" width="405" height="349" alt="hyperbola" />
+			</div><br>
+            <b class="underline">Standard Form of the Equation of a Hyperbola</b><br>
+			<div id="content-box-blue" class="zoomTarget" data-closeclick="true" style="width:500px;">transverse axis parallel to x-axis:${(x-h)^2}/{a^2}-{(y-k)^2}/{b^2}=1$<br>
+			transverse axis parallel to y-axis:${(y-k)^2}/{a^2}-{(x-h)^2}/{b^2}=1$<br>
+			center=$(h,k)$<br>
+			a = length from center to a verex<br>
+			c = length from center to a focus<br>
+			<i>Pythagorean Theorem</i>: $c^2=a^2+b^2$</div>
+			<b class="underline">Equations of the Asymptotes of a Hyperbola</b><br>
+			<div id="content-box-green" class="zoomTarget" data-closeclick="true" style="width:500px;">horizontal transverse axis: $y-k=&plusmn;b/a(x-h)$<br>
+			vertical transverse axis: $y-k=&plusmn;a/b(x-h)$</div>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b class="underline">Standard Form of the Equation of a Hyperbola</b><br>
+			Find the coordinates of the center, foci & vertices, & equations of the aysmptotes for:<br>
+			<b class="underline">Asymptotes</b><br>
+			$\table 4x^2-9y^2+32x+18y+91=0; 4x^2+32x-9y^2+18y=-91; 4(x^2+8x+__)-9(y^2-2y+__)=-91; 4(x^2+8x+16)-9(y^2-2y++1)=-91+64-9; 4(x+4)^2-9(y-1)^2=-36$<br>
+			$\table {(x-h)^2}/{a^2}-{(y-k)^2}/{b^2}=1; {(x+4)^2}/{-9}+{(y-1)^2}/4=1$
+			$\table {(y-k)^2}/{a^2}-{(x-h)^2}/{b^2}=1; {(y-1)^2}/4-{(x+4)^2}/9=1$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			$\table a=2\text", " b=3; c^2=a^2+b^2; c=&plusmn;&radic;{4+9}; c=&plusmn;&radic;{13}$<br>
+			<br>
+			$a=2\text", " b=3\text", " c=&plusmn;&radic;{13}\text", " h=-4\text", " k=1$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b class="underline">Center</b>
+			$(h,k)=(-4,1)$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b class="underline">Vertices</b>
+			$\table =(h,k+a)=(-4,1+2)=(-4,3); =(h,k-a)=(-4,1-2)=(-4,-1)$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b class="underline">Foci</b>
+			$(h,k&plusmn;c)=(-4,1&plusmn;&radic;{13})$<br>
+			</div><br>
+			<div  class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b class="underline">Vertical Transverse Axis</b><br>
+			$\table y-k=&plusmn;a/b(x-h); y-1=&plusmn;2/3(x+4)$<br>
+            </div><br>
+			</div>
+		</article>
+	</div>
+</div>
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

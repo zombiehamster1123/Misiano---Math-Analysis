@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example Page</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<h1>Polar Coordinates</h1>
+            <table class="zoomTarget" data-closeclick="true" style="width:500px;">
+              <tr>
+                <td><strong>|r|</strong> - magnitude (length) of radius<br>
+            <strong>polar coordinates</strong> - is in the form $(r,&theta;)$<br>
+            <strong>pole</strong> - a fixed point O<br>
+            <strong>polar axis</strong> - a horizontal ray directed toward the right from the pole<br></td>
+                <td><img src="images/polarCoordinatesGraph.gif" width="313" height="339" alt="polar coordinates" /></td>
+              </tr>
+            </table>
+            
+            <table class="zoomTarget" data-closeclick="true" style="width:500px; text-position:center;">
+              <tr>
+                <th scope="col">If r is positive, &theta; is angle in standard position</th>
+                <th scope="col">If r is negative, &theta; is angle of opposite in standard position</th>
+              </tr>
+              <tr>
+                <td><img src="images/polarPositiveCoordinate1.png" width="255" height="76" alt="positive 1" /></td>
+                <td><img src="images/polarNegativeCoordinate1.png" width="216" height="109" alt="negative 1" /></td>
+              </tr>
+              <tr>
+                <td><img src="images/polarPositiveCoordinate2.png" width="294" height="76" alt="positive 2" /></td>
+                <td><img src="images/polarNegativeCoordinate2.png" width="246" height="109" alt="negative 2" /></td>
+              </tr>
+            </table>
+            
+            <table class="zoomTarget" data-closeclick="true" style="width:500px; text-position:center;">
+              <tr>
+                <th scope="col">Polar Equation</th>
+                <th scope="col">Polar Graph</th>
+              </tr>
+              <tr>
+                <td>$r=3\cos2&theta;$</td>
+                <td><img src="images/polarGraph.gif" width="263" height="252" alt="polar graph" /></td>
+              </tr>
+            </table>
+			<br>
+			</div>
+		</article>
+	</div>    
+</div>
+
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

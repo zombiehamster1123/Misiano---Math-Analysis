@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example Page</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<h1>Simplifying Complex Number</h1>
+            <table class="zoomTarget" data-closeclick="true" style="width:500px;">
+              <tr>
+                <td>recall...</td>
+                <td>$a+b\bo i$</td>
+              </tr>
+              <tr>
+              	<td></td><td>where <em>a & b</em> are real #'s</td>
+              </tr>
+              <tr>
+              	<td></td><td>& <strong>i</strong> is the imaginary unit</td>
+              </tr>
+            </table>
+            <br>
+            <table class="zoomTarget" data-closeclick="true" style="width:500px;">
+              <tr>
+                <td>recall...</td>
+                <td>$\i=&radic;{-1}$</td>
+              </tr>
+              <tr>
+                <td></td><td>$\i^2=&radic;{-1}&bull;&radic;{-1}=-1$</td>
+              </tr>
+              <tr>
+                <td></td><td>$\i^3=\i^2&bull;\i=-\i$</td>
+              </tr>
+              <tr>
+                <td></td><td>$\i^4=\i^2&bull;\i^2=1$</td>
+              </tr>
+            </table>
+            <br>
+            <table class="zoomTarget" data-closeclick="true" style="width:500px;">
+              <tr>
+                <th scope="col" colspan="3">To simplify powers of $\i$, divide exponent by 4 & if...</th>
+              </tr>
+              <tr>
+                <td>remainder = 0</td>
+                <td>$\i^0$</td>
+                <td>$1$</td>
+              </tr>
+              <tr>
+                <td>remainder = 1</td>
+                <td>$\i^1$</td>
+                <td>$\i$</td>
+              </tr>
+              <tr>
+                <td>remainder =2</td>
+                <td>$\i^2$</td>
+                <td>$-1$</td>
+              </tr>
+              <tr>
+                <td>remainder = 3</td>
+                <td>$\i^3$</td>
+                <td>$-\i$</td>
+              </tr>
+            </table>
+            <br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            <strong>Simplifying Complex Number</strong><br>
+            $\table \text"Simplify... " \i^39; \text"Since " 39/4=9r3; \i^39=\i^3=-\i$<br>
+            <br>
+            When adding or subtracting complex #s combine their real parts & their imaginary parts</div>
+            <table class="zoomTarget" data-closeclick="true" style="width:500px;">
+              <tr>
+                <th scope="col">Addition Example</th>
+                <th scope="col">Subtraction Example</th>
+              </tr>
+              <tr>
+                <td>$(4+5\i)+(1-3\i)$</td>
+                <td>$(4+5\i)-(1-3\i)$</td>
+              </tr>
+              <tr>
+                <td>$=[4+1]+[5\i+(-3\i)]$</td>
+                <td>$=[4-1]+[5\i-(-3\i)]$</td>
+              </tr>
+              <tr>
+                <td>$=5+2\i$</td>
+                <td>$=3+8\i$</td>
+              </tr>
+            </table>
+            <br>
+			<div class="zoomTarget" data-closeclick="true" style="width:600px;">
+            <strong>When multiplying complex #s... use FOIL</strong><br>
+            <b class="underline">Multiplication Example</b><br>
+            $\table (4+5\i)(1-3\i); =4-12\i+5\i-15\i^2; =4-7\i-15(-1); =4-7\i+15; =19-7\i$<br>
+            </div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:600px;">
+            When dividing complex #s... multiply the numberator & denominator by the conjugate of the denominator<br>
+            $\table {4+5\i}/{1-3\i}=({4+5\i}/{1-3\i})({1+3\i}/{1+3\i});
+            ={4+12\i+5\i+15\i^2}/{1+3\i-3\i-9\i^2}; ={4+17\i+15(-1)}/{1-9(-1)};
+            ={4+17\i-15}/{1+9}; ={-11+17\i}/10; =-11/10+17/{10}\i$<br>
+			</div><br><br><br>
+			</div>
+		</article>
+	</div>    
+</div>
+
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

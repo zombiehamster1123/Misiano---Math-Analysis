@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction to Matrices</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+<style>
+@media screen and (max-device-width : 481px) {#multiplyMatricesTable1{display:none;}}
+@media screen and (min-device-width : 482px) {#multiplyMatricesTable2{display:none;}}
+</style>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		<article id="contentWrapper">
+			<div id="contentScroller">
+            <h1>Introduction to Matrices</h1>
+            <a href="../homework/hwIntroductionToMatrices.html" data-ajax="false" data-role="button" data-theme="b" class="ui-btn-left">Homework</a>
+			<a href="../videos/videoIntroductionToMatrices.html" data-ajax="false" data-role="button" class="ui-btn-right" data-theme="b">Video</a><br>
+			<br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>Matrix</b><br>
+			any rectangular arrangement of elements<br>
+			<b>Dimensions of a matrix...</b> $\table m, x, n$, where<br>
+			$m=#$ of rows<br>
+			$n=#$ of columns<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            <table class="gridtable" id="multiplyMatricesTable1">
+              <tr>
+                <th scope="col">Row Matix</th>
+                <th scope="col">Column Matrix</th>
+                <th scope="col">Square Matrix</th>
+              </tr>
+              <tr>
+                <td>only 1 row</td>
+                <td>only 1 column</td>
+                <td>same # of rows & columns</td>
+              </tr>
+              <tr>
+                <td>$[\table 4, 7, -11]$</td>
+                <td>$[\table 5; -2; 3 ]$</td>
+                <td>$[\table 3, 8, -1; -5, 6, 2; 7, -4, 0 ]$</td>
+              </tr>
+            </table>
+			</div>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<table class="gridtable" id="multiplyMatricesTable2">
+              <tr>
+                <th scope="col">Row Matix</th>
+                <th scope="col">Column Matrix</th>
+              </tr>  
+              <tr>
+                <td>only 1 row</td>
+                <td>only 1 column</td>
+              </tr>
+              <tr>
+                <td>$[\table 4, 7, -11]$</td>
+                <td>$[\table 5; -2; 3 ]$</td>
+              </tr>
+			  <tr> <th scope="col" colspan="2">Square Matrix</th></tr>
+              <tr><td colspan="2">same # of rows & columns</td> </tr>
+              <tr><td colspan="2">$[\table 3, 8, -1; -5, 6, 2; 7, -4, 0 ]$</td> </tr>
+            </table>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b><i>Equal Matrices</i></b><br>
+			Same dimensions $(\table m, x, n)$<br>
+			Correspoding elements are equal<br>
+			<br>
+			Ex) Find the values of x & y for which the following equation is true<br>
+			$[\table y-2;2x]=[\table 2x-8; 4y]$<br></div>
+			<br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            $\table y-2=2x-8; 2x=4y$<br>
+            <br>
+			$\table 2x=4y; x=2y$<br>
+			<br>
+			$\table y-2=2x-8; y-2=2(2y)-8; 6=3y; 2=y$<br>
+			<br>
+			$\table x=2(2); x=4$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>Adding & Subtracting Matrices</b><br>
+			Must be same dimensions $(\table m, x, n)$<br>
+			Add or subtract the corresponding elements<br>
+			<br>
+			Ex) Let $A=[\table 2, -4; 3, -8]$ & $B=[\table -5, 7; 1, 4]$<br>
+			Find $A+B=[\table 2+(-5), -4+7; 3+1, -8-4]=[\table -3, 3; 4, -4]$<br>
+			$A-B=[\table 2-(-5), -4-7; 3-1, -8-4]=[\table 7, -11; 2, -12]$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<b>Scalar Product</b><br>
+			Multiply each element of the matrix by the scalar, $k$<br>
+			Ex) Given $k=3$ & $A=[\table 2, 5, -1; 3, -2, 4]$, find $kA$<br>
+			$\table kA=3[\table 2, 5, -1; 3, -2, 4],=[\table 3(2), 3(5), 3(-1); 3(3), 3(-2), 3(4)]; ,=[\table 6, 15, -3; 9, -6, 12]$<br>
+			</div><br>
+			<br>
+			</div>
+		</article>
+	</div>
+</div>
+
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

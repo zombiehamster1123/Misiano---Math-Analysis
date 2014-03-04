@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linear Programming</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+		<div  data-role="content" id="content">
+		
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			<h1>Linear Programming</h1>
+			Linear Programming is used when...<br>
+			- constraints exist on the variables<br>
+			ex) $\table x>0, \text",", y<2x+1$<br>
+			<br>
+			- a function of these variables is to be maximized or minimized<br>
+			ex) $f(x,y)=2x+3y$<br>
+			</div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:700px;">
+            <table class="gridtable">
+              <tr>
+                <th scope="col" colspan="3">Solution Region Descriptions</th>
+              </tr>
+              <tr>
+                <td>Infeasible: no solution region</td>
+                <td>Unbounded: infinitely large</td>
+                <td>Alternate Optimal Solutions: > 1 optimal point</td>
+              </tr>
+              <tr>
+                <td><img src="images/linearInfeasibleGraph.gif" width="207" height="183" alt="infeasible" /></td>
+                <td><img src="images/linearUnboundedGraph.gif" width="202" height="188" alt="unbounded" /></td>
+                <td><img src="images/linearAlternateGraph.gif" width="195" height="204" alt="alternate" /></td>
+              </tr>
+            </table>
+            </div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			Steps...<br>
+            <ol>
+			<li>Define variables</li>
+			<li>Write constraints as a system of inequalities</li>
+			<li>Write an expression to be maximized/minimized</li>
+			<li>Graph the system & find vertices of the polygon</li>
+			<li>Evaluate vertices in expression to be max/min</li>
+			<li>Identify the max/min result</li>
+            </ol>
+			</div><br>
+			<b>Problem:</b>
+			<p>A farmer has 10 acres to plant wheat &amp; rye.  He must plant at least 7 acres. He only has \$1,200 to spend & each acre of wheat costs \$200 to plant & each acre of rye costs \$100 to plant.  The farmer must get the planting done in 12 hrs & it takes 1 hr to plant 1 acre of wheat & 2 hrs to plant 1 acre of rye.  If the profit is \$500 per acre of wheat & \$300 per acre of rye, how many acres of each should be planted to maximize profits?</p>
+			<p><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+			Since the question is...<br>
+			How many acres of wheat & how many acres of rye should be planted...<br>
+			<br>
+			Let x = # of acres of wheat<br>
+			    y = # of acres of rye<br>
+			<br>
+			<b>Objective</b> -  to maximize profits<br>
+			Each acre of wheat brings in <b>\$500</b> & each acre of rye brings in <b>\$300</b>, so:<br>
+			$\text"Profit"=500x+300y$<br>
+			We've defined our unknowns and expressed our objective... all else are constraints<br>
+            </div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            <table width="400" class="gridtable">
+              <tr>
+                <th scope="col">Constraints</th>
+                <th scope="col">Inequalities</th>
+              </tr>
+              <tr>
+                <td><b>Acerage</b> (must plant at least 7 acres & no more than 10 acres)</td>
+                <td>$\table x+y&ge;7; x+y&le;10$</td>
+              </tr>
+              <tr>
+                <td><b>Cost</b> (only \$1200 to spend on planting)</td>
+                <td>$200x+100y&le;\$1200$</td>
+              </tr>
+              <tr>
+                <td><b>Time</b> (planting must be done in 12 hrs)</td>
+                <td>$x+2y&le;12$</td>
+              </tr>
+              <tr>
+                <td><b>Implied Constraints</b></td>
+                <td>$\table x&ge;0; y&ge;0$</td>
+              </tr>
+            </table>
+            </div><br>
+			<br>
+			<div class="zoomTarget" data-closeclick="true" style="width:700px;">
+            <table width="200" class="gridtable">
+              <tr>
+                <th scope="col">Graph acerage constraints</th>
+                <th scope="col">Overlay cost constraints</th>
+                <th scope="col">Overlay time constraints</th>
+              </tr>
+              <tr>
+                <td><img src="images/linearAcerageGraph.png" width="215" height="232" alt="acerage" /></td>
+                <td><img src="images/linearCostGraph.png" width="238" height="233" alt="cost" /></td>
+                <td><img src="images/lineartimeGraph.png" width="238" height="287" alt="time" /></td>
+              </tr>
+            </table>
+            </div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            Solve for vertices A, B, C:
+            $\table A=(5,2); B=(4,4); C=(2,5)$<br>
+            </div><br>
+            <table class="zoomTarget" data-closeclick="true" style="width:500px;">
+              <tr>
+                <td><img src="images/lineartimeGraph.png" width="238" height="287" alt="time" /></td>
+                <td>$\table Profit_{(x,y)}=500x+300y;
+                {\table A:Profit_{(5,2)}, =, 500(5)+300(2);, =, \$3\text","100};
+                {\table B:Profit_{(4,4)}, =, 500(4)+300(4);, =, \$3\text","200};
+                {\table C:Profit_{(2,5)},=, 500(2)+300(5); , =, \#2\text","500}$</td>
+              </tr>
+            </table>
+			<br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            & so <b>Option B</b> or <b>planting 4 acres of wheat & 4 acres of rye</b><br>
+            should be planted to maximize profits<br>
+            </div><br>
+			<a href="../homework/hwLinearProgramming.html" data-ajax="false" data-role="button" data-theme="b" class="ui-btn-left">Homework</a><br>
+			<br><br><br>
+			</div>
+		</article>
+	</div>
+</div>
+
+<script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>

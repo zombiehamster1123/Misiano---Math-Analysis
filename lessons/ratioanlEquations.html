@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rational Equations</title>
+<link href="../phone/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="../phone/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="../mathscribe/jqmath-0.4.0.css">
+<link href="../css/layout.css" type="text/css" rel="stylesheet" />
+
+<script src="../phone/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../phone/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script src="../mathscribe/jqmath-etc-0.4.0.min.js"></script>
+<script type="application/javascript" src="../javascript/iscroll.min.js"></script>
+<script src="../javascript/jquery.zoomooz.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="page">
+	<div  data-role="content" id="content">
+		<article id="contentWrapper">
+			<div id="contentScroller">
+			<h1>Rational Equations &amp; Partial Fractions</h1>
+            <a href="../homework/hwRationalEquations.html" data-ajax="false" data-role="button" class="ui-btn-left" data-theme="b">Homework</a><br>
+			<br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            Solve for x...<br>            
+            $\table x/{x-2}+1/{x-4}=2/{x^2-6x+8};
+            x/{x-2}+1/{x-4}=2/{(x-2)(x-4)};
+            x/{x-2}({(x-2)(x-4)}/1)+1/{x-4}({(x-2)(x-4)}/1)=2/{(x-2)(x-4)}({(x-2)(x-4)}/1);
+            x(x-4)+x-2=2;
+            x^2-4x+x-2=2;
+            x^2-3x-4=0;
+            (x-4)(x+1)=0;
+            x=4\text" , " x=-1$<br>
+            $x=-1$ being the correct answer<br>
+            </div><br>
+			<div class="zoomTarget" data-closeclick="true" style="width:500px;">
+            <b class="underline">Decompose a Frction into Partial Fractions</b><br>
+			$\table {3x-1}/{x^2-1}, =, {3x-1}/{(x+1)(x-1)}, =, A/{x+1}+B/{x-1}; , , 3x-1, =, A(x-1)+B(x+1)$<br>
+            <br>
+            Use undefined values to find A & B<br>
+            <br>
+            $\table \html'&lt;b class="underline">When  x=1&lt;/b>';
+             3(1)-1=A(1-1):B(1+1);
+             2=2B;
+             1=B;
+            \html'&lt;b class="underline">When  x=-1&lt;/b>';
+             3(-1)-1=A(-1-1)+B(-1+1);
+             -4=-2A;
+             2=A$</div>
+             
+			 <div class="zoomTarget" data-closeclick="true" style="width:500px;">
+             $\table A/{x+1}+B/{x-1}=2/{x+1}+1/{x-1};
+             \text"and so...";
+             {3x-1}/{x^2-1}=2/{x+1}+1/{x-1}$<br>
+             </div><br>
+			 <div class="zoomTarget" data-closeclick="true" style="width:500px;">
+             <b class="underline">Rational Inequalites</b><br>
+             Use test points in between all zeros & undefined values<br>
+             Solve $\table {x-1}/{x+2}&le;0; ({x+2}/1){x-1}/{x+2}&le;0({x+2}/1)$</div><br>
+             <table height="150" class="zoomTarget" data-closeclick="true" style="width:500px;">
+              <tr>
+                <td>undefined at $x=-2$</td>
+                <td>$\table x-1 &le;\text" OR " &ge; 0; x &le; \text" OR " &ge; 1$</td>
+                <td>zero at $x=1$</td>
+              </tr>
+              <tr>
+                <td colspan="3"><img src="images/rationalInequalities.png" width="435" height="125" alt="inequality" /></td></tr>
+              <tr>
+                <td>$\table f(-3)=4; 4&#8816;0$</td>
+                <td>$\table f(0)=-1/2; -1/2 &le;0$</td>
+                <td>$\table f(2)=1/4; 1/4&#8816;0$</td>
+              </tr>
+              <tr>
+              <td></td>
+              <td>Ans:<span class="answer">$-2&lt;x&le;1$</span></td>
+              <td></td>
+              </tr>
+            </table>
+            <br><br><br>
+			</div>
+		</article>
+	</div>    
+</div>
+
+ <script src="../javascript/listInclude.js" type="text/javascript"></script>
+
+</body>
+</html>
